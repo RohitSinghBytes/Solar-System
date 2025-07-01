@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(6, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./shooting-star-2024127_1280.webp);
+}
+
+.orbit{
+    height: 730px;
+    width: 730px;
+    position: relative;
+    /* background-color: rgb(6, 5, 5); */
+}
+
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(5deg, red, orange, yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* commonly used to center an element exactly at the middle of its 
+    parent container, both horizontally and vertically. */
+}
+
+.orbital{
+    height: 200px;
+    width: 200px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 265px;
+    left: 265px;
+}
+
+.mars-orbit {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 265px;
+    left: 265px;;
+    animation: orbit 2s linear infinite; /* Rotates the whole orbit */
+}
+
+.mars {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: linear-gradient(orange, red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.mars span {
+    display: block;
+    transform: rotate(-360deg); /* Counter Rotation */
+    animation: reverseOrbit 2s linear infinite; /* Text remains fixed */
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverseOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg); /* Rotates in reverse direction */
+    }
+}
+
+
+.orbita{
+    height: 300px;
+    width: 300px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 215px;
+    left: 215px;
+}
+
+.earth-orbit {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 215px;
+    left: 215px;
+    animation: orbit 3s linear infinite; /* Rotates the whole orbit */
+}
+
+.earth {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: linear-gradient(yellow,rgb(187, 255, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.earth span {
+    display: block;
+    transform: rotate(-360deg); /* Counter Rotation */
+    animation: reverseOrbit 3s linear infinite; /* Text remains fixed */
+}
+
+.orbitaa{
+    height: 400px;
+    width: 400px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 165px;
+    left: 165px;
+}
+
+.venus-orbit {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 165px;
+    left: 165px;
+    animation: orbit 4s linear infinite; /* Rotates the whole orbit */
+}
+
+.venus {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: linear-gradient(blue,white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.venus span {
+    display: block;
+    transform: rotate(-360deg); /* Counter Rotation */
+    animation: reverseOrbit 4s linear infinite; /* Text remains fixed */
+}
+
+.jupi{
+    height: 500px;
+    width: 500px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 115px;
+    left: 115px;
+}
+
+.jupiter-orbit {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 115px;
+    left: 115px;
+    animation: orbit 5s linear infinite; /* Rotates the whole orbit */
+}
+
+.jupiter {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: linear-gradient(grey,rgb(200, 189, 189));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.jupiter span {
+    display: block;
+    transform: rotate(-360deg); /* Counter Rotation */
+    animation: reverseOrbit 5s linear infinite; /* Text remains fixed */
+}
+
+.ura{
+    height: 600px;
+    width: 600px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+}
+
+.uranus-orbit {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    animation: orbit 6s linear infinite; /* Rotates the whole orbit */
+}
+
+.uranus {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(56, 165, 190),white,rgb(81, 173, 186));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.uranus span {
+    display: block;
+    transform: rotate(-360deg); /* Counter Rotation */
+    animation: reverseOrbit 6s linear infinite; /* Text remains fixed */
+}
+
+.nep{
+    height: 700px;
+    width: 700px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.neptune-orbit {
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    animation: orbit 7s linear infinite; /* Rotates the whole orbit */
+}
+
+.neptune {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-color: rgb(42, 229, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; 
+    left: 0%;
+    transform: translate(-50%, -50%);
+}
+
+.neptune span {
+    display: block;
+    transform: rotate(-360deg); /* Counter Rotation */
+    animation: reverseOrbit 7s linear infinite; /* Text remains fixed */
+}
